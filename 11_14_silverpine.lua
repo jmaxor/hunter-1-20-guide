@@ -32,7 +32,7 @@ accept "wild hearts"
 accept "prove your worth"
 completewc "prove your worth"
 turnin "prove your worth"
-accept(422) --arugal's folly
+accept "arugal's folly"
 accept "border crossings"
 turnin "the deathstalkers' report"
 accept "speak with renferrel"
@@ -55,7 +55,7 @@ completewc "arugal's folly"
 
 -------------------- sepulcher turnins --------------------
 turnin "arugal's folly"
-accept(423) --arugal's folly
+accept "arugal's folly"
 buy(1000, "sharp arrow", "edwin harly")
 buyPots()
 turnin "the dead fields"
@@ -79,8 +79,8 @@ step(
     turnin "arugal's folly",
     ".mob Grimson the Pale"
 )
-accept(424) --arugal's folly
-complete "arugal's folly"
+accept "arugal's folly"
+completewc "arugal's folly"
 turnin "maps and runes"
 accept "dalar's analysis"
 turnin "arugal's folly"

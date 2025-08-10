@@ -594,6 +594,7 @@ step
 step
     .complete 424,1 --Arugal's Folly
     .mob Grimson the Pale
+    .goto Silverpine Forest,58.58,44.86
 step
     .goto Silverpine Forest,43.98,40.93
     .target Shadow Priest Allister

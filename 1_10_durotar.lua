@@ -22,7 +22,7 @@ accept "sting of the scorpid"
 accept "etched tablet"
 buy(800, "rough arrow", "duokna")
 accept "galgar's cactus apple surprise"
-accept "vile familiars"
+accept(792) --vile familiars
 accept "lazy peons"
 
 
