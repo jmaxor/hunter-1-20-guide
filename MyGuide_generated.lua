@@ -509,6 +509,7 @@ step
     .complete 437,1 --The Dead Fields
     .mob Nightlash
     .goto Silverpine Forest,44.67,20.67
+    .complete 437,2 --The Dead Fields
 step
     .goto Silverpine Forest,53.43,12.59
     .target Quinn Yorick
@@ -532,6 +533,7 @@ step
     .complete 437,1 --The Dead Fields
     .mob Nightlash
     .goto Silverpine Forest,44.67,20.67
+    .complete 437,2 --The Dead Fields
 step
     .complete 422,1 --Arugal's Folly
     .goto Silverpine Forest,52.83,28.58

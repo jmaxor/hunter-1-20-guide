@@ -44,12 +44,18 @@ accept "return to quinn"
 
 
 -------------------- first silverpine loop --------------------
-completewc "the dead fields"
+step(
+    complete1wc "the dead fields",
+    complete2 "the dead fields"
+)
 turnin "return to quinn"
 accept "ivar the foul"
 completewc "ivar the foul"
 turnin2 "ivar the foul"
-completewc "the dead fields"
+step(
+    complete1wc "the dead fields",
+    complete2 "the dead fields"
+)
 completewc "arugal's folly"
 
 
