@@ -416,16 +416,16 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ormak Grimshot|r
     .turnin 6081 --Training the Beast
 step
-    .goto Orgrimmar,81.53,19.63
-    .target Hanashi
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hanashi|r
-    .train 227 >>Train [Staves]
-step
     .goto Orgrimmar,81.15,18.67
     .target Zendo'jian
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Zendo'jian|r
     .collect 2495,1
     .buy 2495,1
+step
+    .goto Orgrimmar,81.53,19.63
+    .target Hanashi
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hanashi|r
+    .train 227 >>Train [Staves]
 step
     .hs >>Hearth to Razor Hill
 step

@@ -207,11 +207,11 @@ accept "skull rock"
 train("great stamina", "xao'tsu")
 train("natural armor", "xao'tsu")
 turnin "training the beast"
+buy(1, "walking stick", "Zendo'jian")
 step(
     autonpc "hanashi",
     ".train 227 >>Train [Staves]"
 )
-buy(1, "walking stick", "Zendo'jian")
 step ".hs >>Hearth to Razor Hill"
 step(
     ".goto Durotar,52.8,29.6",
