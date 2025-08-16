@@ -322,11 +322,6 @@ step
     #sticky
     .xp 10-1525
 step
-    .complete 806,1 --Dark Storms
-    .mob Fizzle Darkstorm
-    .goto Durotar,42.12,26.66
-    .mob Imp Minion
-step
     .goto Durotar,46.37,22.94
     .target Rezlak
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rezlak|r
@@ -339,6 +334,11 @@ step
     .target Rezlak
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rezlak|r
     .turnin 834 --Winds in the Desert
+step
+    .complete 806,1 --Dark Storms
+    .mob Fizzle Darkstorm
+    .goto Durotar,42.12,26.66
+    .mob Imp Minion
 step
     .complete 837,3 --Encroachment
     .mob Razormane Dustrunner

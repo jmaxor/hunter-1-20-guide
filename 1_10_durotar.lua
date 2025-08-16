@@ -163,13 +163,13 @@ step[[
     #sticky
     .xp 10-1525
 ]]
+accept "winds in the desert"
+completewc "winds in the desert"
+turnin "winds in the desert"
 step(
     completewc "dark storms",
     ".mob Imp Minion"
 )
-accept "winds in the desert"
-completewc "winds in the desert"
-turnin "winds in the desert"
 step(
     complete3wc "encroachment",
     complete4 "encroachment"
