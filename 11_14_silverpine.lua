@@ -96,6 +96,7 @@ buy(1000, "sharp arrow", "edwin harly")
 buyPots()
 turnin "Dalaran's Intentions"
 accept "ambermill investigations"
+turnin "rot hide clues"
 
 
 -------------------- getting rod --------------------
@@ -111,5 +112,4 @@ buy(1000, "sharp arrow", "edwin harly")
 buyPots()
 
 
-turnin "rot hide clues"
 step ".hs >>Hearth to Razor Hill"

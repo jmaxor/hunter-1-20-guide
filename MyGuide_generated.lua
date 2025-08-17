@@ -634,6 +634,11 @@ step
     .turnin 482 --Dalaran's Intentions
     .accept 479 --Ambermill Investigations
 step
+    .goto Silverpine Forest,43.42,40.86
+    .target High Executor Hadrec
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Executor Hadrec|r
+    .turnin 439 --Rot Hide Clues
+step
     .complete 479,1 --Ambermill Investigations
     .mob Dalaran Protector
     .mob Dalaran Mage
@@ -672,11 +677,6 @@ step
     .buy 858,2
     .buy 858,1
     .vendor >>Vendor & buy any [Lesser Healing Potion] he has
-step
-    .goto Silverpine Forest,43.42,40.86
-    .target High Executor Hadrec
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Executor Hadrec|r
-    .turnin 439 --Rot Hide Clues
 step
     .hs >>Hearth to Razor Hill
 ]])
