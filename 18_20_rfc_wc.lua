@@ -8,6 +8,7 @@ train("immolation trap", "ormak grimshot")
 train("mend pet", "ormak grimshot")
 train("eyes of the beast", "ormak grimshot")
 train("multi-shot", "ormak grimshot")
+train("scare beast", "ormak grimshot")
 train("arcane shot", "ormak grimshot", 2)
 train("raptor strike", "ormak grimshot", 3)
 
@@ -37,15 +38,12 @@ step[[
 ]]
 step(
     ".goto The Barrens,49.3,60.2",
-    collect(1, "owatanka's tailspike"),
+    accept "owatanka",
     complete "enraged thunder lizards"
 )
 turnin "enraged thunder lizards"
 accept "cry of the thunderhawk"
-step(
-    accept "owatanka",
-    complete "cry of the thunderhawk"
-)
+complete "cry of the thunderhawk"
 turnin2 "cry of the thunderhawk"
 turnin "owatanka"
 step(

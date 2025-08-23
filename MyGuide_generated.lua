@@ -1229,6 +1229,7 @@ step
     .train 136 >>Train [Mend Pet (Rank 1)]
     .train 1002 >>Train [Eyes of the Beast]
     .train 2643 >>Train [Multi-Shot (Rank 1)]
+    .train 1513 >>Train [Scare Beast (Rank 1)]
     .train 14281 >>Train [Arcane Shot (Rank 2)]
     .train 14261 >>Train [Raptor Strike (Rank 3)]
 step
@@ -1258,6 +1259,8 @@ step
 step
     .goto The Barrens,49.3,60.2
     .collect 5102,1 --Owatanka's Tailspike
+    .use 5102 --Owatanka's Tailspike
+    .accept 884 --Owatanka
     .complete 907,1 --Enraged Thunder Lizards
     .mob Stormhide
     .mob Thunderhead
@@ -1269,9 +1272,6 @@ step
     .turnin 907 --Enraged Thunder Lizards
     .accept 913 --Cry of the Thunderhawk
 step
-    .collect 5102,1 --Owatanka's Tailspike
-    .use 5102 --Owatanka's Tailspike
-    .accept 884 --Owatanka
     .complete 913,1 --Cry of the Thunderhawk
     .mob Thunderhawk Hatchling
     .mob Greater Thunderhawk
