@@ -61,7 +61,7 @@ completewc "arugal's folly"
 
 -------------------- sepulcher turnins --------------------
 turnin "arugal's folly"
-accept "arugal's folly"
+--accept "arugal's folly"
 buy(1000, "sharp arrow", "edwin harly")
 buyPots()
 turnin "the dead fields"
@@ -73,23 +73,23 @@ turnin "border crossings"
 accept "maps and runes"
 turnin "the decrepit ferry"
 accept "rot hide clues"
-step(
-    ".goto Silverpine Forest,56.1,45.1",
-    complete "arugal's folly",
-    complete2 "arugal's folly"
-)
+--step(
+--    ".goto Silverpine Forest,56.1,45.1",
+--    complete "arugal's folly",
+--    complete2 "arugal's folly"
+--)
 
 
 -------------------- grimson turnins --------------------
-step(
-    turnin "arugal's folly",
-    ".mob Grimson the Pale"
-)
-accept "arugal's folly"
-completewc "arugal's folly"
+--step(
+--    turnin "arugal's folly",
+--    ".mob Grimson the Pale"
+--)
+--accept "arugal's folly"
+--completewc "arugal's folly"
 turnin "maps and runes"
 accept "dalar's analysis"
-turnin "arugal's folly"
+--turnin "arugal's folly"
 turnin "dalar's analysis"
 accept "Dalaran's Intentions"
 buy(1000, "sharp arrow", "edwin harly")

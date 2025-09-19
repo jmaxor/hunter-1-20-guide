@@ -9,6 +9,8 @@ accept "crossroads conscription"
 -------------------- xr accept --------------------
 accept "meats to orgrimmar"
 accept "raptor thieves"
+accept "disrupt the attacks"
+accept "supplies for the crossroads"
 turnin "crossroads conscription"
 accept "plainstrider menace"
 accept "the forgotten pools"
@@ -16,14 +18,26 @@ accept "the forgotten pools"
 
 -------------------- xr loop --------------------
 step(
-    ".goto The Barrens,52.1,30.4",
+    "#sticky",
     complete "plainstrider menace"
+)
+step(
+    "#sticky",
+    ".goto The Barrens,55.7,27.3",
+    accept "chen's empty keg"
+)
+step(
+    complete1wc "disrupt the attacks",
+    complete2 "disrupt the attacks",
+    complete3 "disrupt the attacks"
 )
 
 
 -------------------- xr turnin --------------------
 turnin "plainstrider menace"
 accept "the zhevra"
+turnin "disrupt the attacks"
+accept "the disruption ends"
 turnin "meats to orgrimmar"
 accept "ride to orgrimmar"
 accept(1492) --"wharfmaster dizzywig"
@@ -46,8 +60,6 @@ turnin "kolkar leaders"
 accept "verog the dervish"
 buy(1000, "sharp arrow", "uthrok")
 turnin "fungal spores"
-accept "disrupt the attacks"
-accept "supplies for the crossroads"
 turnin "the zhevra"
 accept "prowlers of the barrens"
 step(
@@ -59,15 +71,13 @@ step(
 -------------------- loop to ratchet --------------------
 step(
     "#sticky",
-    ".goto The Barrens,55.7,27.3",
-    accept "chen's empty keg"
+    complete "supplies for the crossroads"
 )
 step(
-    complete1wc "disrupt the attacks",
-    complete2 "disrupt the attacks",
-    complete3 "disrupt the attacks"
+    complete1 "the disruption ends",
+    complete2 "the disruption ends",
+    complete3wc "the disruption ends"
 )
-completewc "supplies for the crossroads"
 step(
     ".goto The Barrens,59.6,34.4",
     complete "prowlers of the barrens"
@@ -80,7 +90,7 @@ accept "chen's empty keg"
 accept "raptor horns"
 accept "wanted: baron longshore"
 turnin "wharfmaster dizzywig"
-accept "miner's fortune"
+--accept "miner's fortune"
 accept "trouble at the docks"
 accept "samophlange"
 accept "southsea freebooters"
@@ -91,7 +101,7 @@ step(
 
 
 -------------------- crossroads turnin --------------------
-turnin "disrupt the attacks"
+turnin1 "the disruption ends"
 turnin "supplies for the crossroads"
 accept "lost in battle"
 turnin "the forgotten pools"
@@ -128,8 +138,8 @@ accept "ignition"
 completewc "ignition"
 turnin "ignition"
 accept(863) --the escape
-complete "the escape"
-completewc "miner's fortune"
+completewc "the escape"
+--completewc "miner's fortune"
 step ".hs >>Hearth to the Crossroads"
 
 
@@ -158,9 +168,10 @@ step(
     complete2 "southsea freebooters"
 )
 step(
-    complete1wc "stolen silver",
+    "#sticky",
     complete "raptor horns"
 )
+complete1wc "stolen silver"
 step(
     complete1wc "The Angry Scytheclaws",
     complete2 "The Angry Scytheclaws",
@@ -176,8 +187,8 @@ accept "altered beings"
 turnin "The Angry Scytheclaws"
 accept "jorn skyseer"
 turnin1 "stolen silver"
-buy(20, "snapvine watermelon", "innkeeper boorand plainswind")
-buy(10, "melon juice", "innkeeper boorand plainswind")
+buy(30, "snapvine watermelon", "innkeeper boorand plainswind")
+buy(20, "melon juice", "innkeeper boorand plainswind")
 
 
 -------------------- loop to ct --------------------
@@ -199,7 +210,7 @@ completewc "hezrul bloodmark"
 turnin "hezrul bloodmark"
 accept "Counterattack!"
 step(
-    ">>If you're more than 6,000xp into 17, skip counterattack.",
+    ">>If you're more than 7500xp into 17, skip counterattack.",
     complete "Counterattack!"
 )
 turnin "Counterattack!"
@@ -233,7 +244,7 @@ turnin "southsea freebooters"
 turnin "wanted: baron longshore"
 accept "the missing shipment"
 turnin "trouble at the docks"
-turnin "miner's fortune"
+--turnin "miner's fortune"
 turnin "the missing shipment"
 turnin "chen's empty keg"
 turnin "raptor horns"

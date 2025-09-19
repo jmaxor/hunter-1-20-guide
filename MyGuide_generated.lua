@@ -63,6 +63,11 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Zureetha Fargaze|r
     .accept 792 --Vile Familiars
 step
+    .goto Durotar,42.84,69.33
+    .target Jen'shan
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jen'shan|r
+    .turnin 3082 --Etched Tablet
+step
     .goto Durotar,44.63,68.65
     .target Foreman Thazz'ril
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Foreman Thazz'ril|r
@@ -102,7 +107,6 @@ step
     .goto Durotar,42.84,69.33
     .target Jen'shan
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jen'shan|r
-    .turnin 3082 --Etched Tablet
     .train 1978 >>Train [Serpent Sting (Rank 1)]
 step
     .goto Durotar,44.63,68.65
@@ -542,7 +546,6 @@ step
     .target Dalar Dawnweaver
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dalar Dawnweaver|r
     .turnin 422 --Arugal's Folly
-    .accept 423 --Arugal's Folly
 step
     .goto Silverpine Forest,43.98,39.9
     .target Edwin Harly
@@ -577,27 +580,6 @@ step
     .turnin 438 --The Decrepit Ferry
     .accept 439 --Rot Hide Clues
 step
-    .goto Silverpine Forest,56.1,45.1
-    .complete 423,1 --Arugal's Folly
-    .mob Moonrage Glutton
-    .complete 423,2 --Arugal's Folly
-    .mob Moonrage Darksoul
-step
-    .goto Silverpine Forest,44.2,39.81
-    .target Dalar Dawnweaver
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dalar Dawnweaver|r
-    .turnin 423 --Arugal's Folly
-    .mob Grimson the Pale
-step
-    .goto Silverpine Forest,44.2,39.81
-    .target Dalar Dawnweaver
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dalar Dawnweaver|r
-    .accept 424 --Arugal's Folly
-step
-    .complete 424,1 --Arugal's Folly
-    .mob Grimson the Pale
-    .goto Silverpine Forest,58.58,44.86
-step
     .goto Silverpine Forest,43.98,40.93
     .target Shadow Priest Allister
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Shadow Priest Allister|r
@@ -607,7 +589,6 @@ step
     .goto Silverpine Forest,44.2,39.81
     .target Dalar Dawnweaver
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dalar Dawnweaver|r
-    .turnin 424 --Arugal's Folly
     .turnin 481 --Dalar's Analysis
     .accept 482 --Dalaran's Intentions
 step
@@ -721,6 +702,12 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gazrog|r
     .accept 869 --Raptor Thieves
 step
+    .goto The Barrens,51.5,30.87
+    .target Thork
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thork|r
+    .accept 871 --Disrupt the Attacks
+    .accept 5041 --Supplies for the Crossroads
+step
     .goto The Barrens,52.23,31.01
     .target Sergra Darkthorn
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sergra Darkthorn|r
@@ -732,17 +719,37 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tonga Runetotem|r
     .accept 870 --The Forgotten Pools
 step
-    .goto The Barrens,52.1,30.4
+    #sticky
     .complete 844,1 --Plainstrider Menace
     .mob Greater Plainstrider
     .mob Ornery Plainstrider
     .mob Fleeting Plainstrider
+step
+    #sticky
+    .goto The Barrens,55.7,27.3
+    .collect 4926,1 --Chen's Empty Keg
+    .use 4926 --Chen's Empty Keg
+    .accept 819 --Chen's Empty Keg
+step
+    .complete 871,1 --Disrupt the Attacks
+    .mob Razormane Water Seeker
+    .goto The Barrens,54.8,26.15
+    .complete 871,2 --Disrupt the Attacks
+    .mob Razormane Thornweaver
+    .complete 871,3 --Disrupt the Attacks
+    .mob Razormane Hunter
 step
     .goto The Barrens,52.23,31.01
     .target Sergra Darkthorn
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sergra Darkthorn|r
     .turnin 844 --Plainstrider Menace
     .accept 845 --The Zhevra
+step
+    .goto The Barrens,51.5,30.87
+    .target Thork
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thork|r
+    .turnin 871 --Disrupt the Attacks
+    .accept 872 --The Disruption Ends
 step
     .goto The Barrens,51.5,30.34
     .target Devrak
@@ -793,12 +800,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Apothecary Helbrim|r
     .turnin 848 --Fungal Spores
 step
-    .goto The Barrens,51.5,30.87
-    .target Thork
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thork|r
-    .accept 871 --Disrupt the Attacks
-    .accept 5041 --Supplies for the Crossroads
-step
     .goto The Barrens,52.23,31.01
     .target Sergra Darkthorn
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sergra Darkthorn|r
@@ -813,21 +814,15 @@ step
     .home >>Set your hearth to the crossroads
 step
     #sticky
-    .goto The Barrens,55.7,27.3
-    .collect 4926,1 --Chen's Empty Keg
-    .use 4926 --Chen's Empty Keg
-    .accept 819 --Chen's Empty Keg
-step
-    .complete 871,1 --Disrupt the Attacks
-    .mob Razormane Water Seeker
-    .goto The Barrens,54.8,26.15
-    .complete 871,2 --Disrupt the Attacks
-    .mob Razormane Thornweaver
-    .complete 871,3 --Disrupt the Attacks
-    .mob Razormane Hunter
-step
     .complete 5041,1 --Supplies for the Crossroads
-    .goto The Barrens,58.96,25.78
+step
+    .complete 872,1 --The Disruption Ends
+    .mob Razormane Geomancer
+    .complete 872,2 --The Disruption Ends
+    .mob Razormane Defender
+    .complete 872,3 --The Disruption Ends
+    .mob Kreenig Snarlsnout
+    .goto The Barrens,58.52,27.04
 step
     .goto The Barrens,59.6,34.4
     .complete 903,1 --Prowlers of the Barrens
@@ -852,7 +847,6 @@ step
     .target Wharfmaster Dizzywig
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wharfmaster Dizzywig|r
     .turnin 1492 --Wharfmaster Dizzywig
-    .accept 896 --Miner's Fortune
 step
     .goto The Barrens,63.09,37.61
     .target Crane Operator Bigglefuzz
@@ -877,7 +871,7 @@ step
     .goto The Barrens,51.5,30.87
     .target Thork
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thork|r
-    .turnin 871 --Disrupt the Attacks
+    .turnin 872,1 --The Disruption Ends
     .turnin 5041 --Supplies for the Crossroads
 step
     .goto The Barrens,51.95,31.58
@@ -973,12 +967,7 @@ step
     .accept 863 --The Escape
 step
     .complete 863,1 --The Escape
-step
-    .complete 896,1 --Miner's Fortune
-    .mob Venture Co. Enforcer
-    .mob Venture Co. Overseer
-    .mob Boss Copperplug
-    .goto The Barrens,60.82,3.99
+    .goto The Barrens,55.36,7.68
 step
     .hs >>Hearth to the Crossroads
 step
@@ -1027,12 +1016,14 @@ step
     .complete 887,2 --Southsea Freebooters
     .mob Southsea Cannoneer
 step
-    .complete 3281,1 --Stolen Silver
-    .goto The Barrens,58.04,53.87
+    #sticky
     .complete 865,1 --Raptor Horns
     .mob Sunscale Scytheclaw
     .mob Ishamuhale
     .mob Takk the Leaper
+step
+    .complete 3281,1 --Stolen Silver
+    .goto The Barrens,58.04,53.87
 step
     .complete 905,1 --The Angry Scytheclaws
     .goto The Barrens,52.6,46.11
@@ -1066,10 +1057,10 @@ step
     .goto The Barrens,51.99,29.89
     .target Innkeeper Boorand Plainswind
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Boorand Plainswind|r
-    .collect 4538,20
-    .buy 4538,20
-    .collect 1205,10
-    .buy 1205,10
+    .collect 4538,30
+    .buy 4538,30
+    .collect 1205,20
+    .buy 1205,20
 step
     #sticky
     .complete 821,2 --Chen's Empty Keg
@@ -1108,7 +1099,7 @@ step
     .turnin 852 --Hezrul Bloodmark
     .accept 4021 --Counterattack!
 step
-    >>If you're more than 6,000xp into 17, skip counterattack.
+    >>If you're more than 7500xp into 17, skip counterattack.
     .complete 4021,1 --Counterattack!
 step
     .goto The Barrens,45.34,28.41
@@ -1161,7 +1152,6 @@ step
     .goto The Barrens,63.35,38.45
     .target Wharfmaster Dizzywig
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wharfmaster Dizzywig|r
-    .turnin 896 --Miner's Fortune
     .turnin 890 --The Missing Shipment
 step
     .goto The Barrens,62.26,38.39

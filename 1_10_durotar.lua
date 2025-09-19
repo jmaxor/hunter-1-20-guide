@@ -23,6 +23,7 @@ accept "etched tablet"
 buy(800, "rough arrow", "duokna")
 accept "galgar's cactus apple surprise"
 accept(792) --vile familiars
+turnin "etched tablet"
 accept "lazy peons"
 
 
@@ -41,7 +42,6 @@ turnin "galgar's cactus apple surprise"
 turnin2 "sting of the scorpid"
 turnin3 "vile familiars"
 accept "burning blade medallion"
-turnin "etched tablet"
 train("serpent sting", "Jen'shan")
 turnin "lazy peons"
 accept "Thazz'ril's Pick"
